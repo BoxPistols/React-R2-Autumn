@@ -1,22 +1,18 @@
-body {
-  font-size: 16px;
-  font-family: Verdana, sans-serif;
-}
-
-.container {
-  width: 330px;
+.container ul {
+  width: clamp(120px, 90%, 400px);
   margin: 20px auto;
 }
 
 .container ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.container li {
+.container li{
   width: 100px;
   height: 100px;
   line-height: 100px;

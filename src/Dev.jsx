@@ -1,31 +1,43 @@
 import React from 'react'
 import './counter.scss'
 
-function CallMe(props) {
-  alert(props)
-}
-// TODO：　関数に引数を渡す
-function Counter(props) {
-  return (
-    <li
-      style={{ backgroundColor: props.color }}
-      onClick={() => CallMe(`This is ${props.color}`)}>
-      0
-    </li>
-  )
+class Counter extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      count: 0,
+    }
+    // this.countUp = this.countUp.bind(this)
+  }
+  countUp() {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count + 1,
+      }
+    })
+  }
+  render() {
+    return (
+      <li
+        style={{
+          backgroundColor: this.props.color,
+        }}
+        onClick={this.countUp.bind(this)}
+      >
+        {this.state.count}
+      </li>
+    )
+  }
 }
 
 function Dev() {
   return (
-    <div>
-      <div>develop</div>
-      <div className="container">
-        <ul>
-          <Counter color="tomato" />
-          <Counter color="teal" />
-          <Counter color="skyblue" />
-        </ul>
-      </div>
+    <div className="container">
+      <ul>
+        <Counter color="tomato" />
+        <Counter color="deepskyblue" />
+        <Counter color="teal" />
+      </ul>
     </div>
   )
 }
