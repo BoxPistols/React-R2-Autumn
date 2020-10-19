@@ -4,7 +4,7 @@ class Counter extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      count: 12,
+      count: 0,
     }
     this.countUp = this.countUp.bind(this)
   }
@@ -15,12 +15,12 @@ class Counter extends React.Component {
   }
   render(h) {
     return (
-      <div
+      <li
         style={{ backgroundColor: this.props.color }}
         onClick={this.countUp}
       >
         {this.state.count}
-      </div>
+      </li>
     )
   }
 }

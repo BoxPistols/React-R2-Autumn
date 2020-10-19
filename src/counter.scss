@@ -1,4 +1,4 @@
-.container ul {
+.container {
   width: clamp(120px, 90%, 400px);
   margin: 20px auto;
 }
@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 
-.container li{
+.container li {
   width: 100px;
   height: 100px;
   line-height: 100px;
