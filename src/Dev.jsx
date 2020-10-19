@@ -1,13 +1,15 @@
 import React from 'react'
 import './counter.scss'
 
-function CallMe() {
-  alert('CallMe!!')
+function CallMe(props) {
+  alert(props)
 }
-
-function Counter(pops) {
+// TODO：　関数に引数を渡す
+function Counter(props) {
   return (
-    <li style={{ backgroundColor: pops.color }} onClick={CallMe}>
+    <li
+      style={{ backgroundColor: props.color }}
+      onClick={() => CallMe(`This is ${props.color}`)}>
       0
     </li>
   )
