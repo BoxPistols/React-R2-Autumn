@@ -1,44 +1,42 @@
 import React from 'react'
 import './counter.scss'
 
-class Counter extends React.Component {
-  constructor(props) {
-    super(props)
+function Counter(props) {
+  return (
+    <li
+      style={{
+        backgroundColor: props.counter.color,
+      }}
+    >
+      {props.counter.id}: {props.counter.count}
+    </li>
+  )
+}
+
+class Total extends React.Component {
+  constructor() {
+    super()
     this.state = {
-      count: 0,
+      counters: [
+        { id: 'A', count: 0, color: 'tomato' },
+        { id: 'B', count: 0, color: 'deepskyblue' },
+        { id: 'C', count: 0, color: 'teal' },
+      ],
     }
-    // this.countUp = this.countUp.bind(this)
-  }
-  countUp() {
-    this.setState((prevState) => {
-      return {
-        count: prevState.count + 1,
-      }
-    })
   }
   render() {
     return (
-      <li
-        style={{
-          backgroundColor: this.props.color,
-        }}
-        onClick={this.countUp.bind(this)}
-      >
-        {this.state.count}
-      </li>
+      <div className="container">
+        <ul>
+          <Counter counter={this.state.counters[0]} />
+          <Counter counter={this.state.counters[1]} />
+          <Counter counter={this.state.counters[2]} />
+        </ul>
+      </div>
     )
   }
 }
-
 function Dev() {
-  return (
-    <div className="container">
-      <ul>
-        <Counter color="tomato" />
-        <Counter color="deepskyblue" />
-        <Counter color="teal" />
-      </ul>
-    </div>
-  )
+  return <Total />
 }
 export default Dev

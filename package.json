@@ -9,11 +9,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.3",
-    "reset-css": "5.0.1",
-    "sass": "1.27.0",
-    "sass-loader": "10.0.3",
-    "stylelint": "13.7.2",
-    "stylelint-scss": "3.18.0"
+    "reset-css": "5.0.1"
   },
   "devDependencies": {
     "typescript": "3.8.3"
