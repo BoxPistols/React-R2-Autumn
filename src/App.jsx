@@ -1,11 +1,11 @@
 import React from 'react'
-import Dev from './Dev'
 import './styles.sass'
 
 // create object オブジェクト配列の作成
 const todos = [
-  { id: 1, name: 'nameA' },
-  { id: 2, name: 'nameB' },
+  { id: 1, name: 'nameA', 'done': false },
+  { id: 2, name: 'nameB', 'done': false },
+  { id: 3, name: 'nameB', 'done': true },
 ]
 
 // function Props Propsの作成とMap関数で値の取得
@@ -13,7 +13,7 @@ const todos = [
 function TodoList(props) {
   // child
   const todos = props.todos.map((todo) => {
-    return <li key={todo.id}>{todo.name}</li>
+    return <li key={todo.id}>{todo.name} / {todo.done}</li>
   })
   // Parent
   return <ul>{todos}</ul>
@@ -35,8 +35,7 @@ export default function App() {
   return (
     <div className="App fz20">
       <h1 className="tx-ml"> Hello CodeSandbox</h1>
-      {/* <Todo /> */}
-      <Dev />
+      <Todo />
     </div>
   )
 }
