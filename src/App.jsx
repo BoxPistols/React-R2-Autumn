@@ -1,5 +1,7 @@
 import React from 'react'
 import './styles.sass'
+import Basic from './Basic'
+import Human from './Human'
 
 export default function App() {
   function Hello(props) {
@@ -13,11 +15,11 @@ export default function App() {
     )
   }
   function Hello3() {
-    const data={
-      firstName: "小西",
-      lastName: "こにたん"
+    const data = {
+      firstName: '小西',
+      lastName: 'こにたん',
     }
-    return <Hello2 {...data}/>
+    return <Hello2 {...data} />
   }
 
   return (
@@ -26,6 +28,8 @@ export default function App() {
       <Hello name="Block" />
       {/* <Hello2 firstName="山田" lastName="たかし" /> */}
       <Hello3 />
+      <Basic />
+      <Human age={24}/>
     </div>
   )
 }
