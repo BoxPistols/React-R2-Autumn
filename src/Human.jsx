@@ -1,4 +1,18 @@
 import React, { Component, PropTypes } from 'react'
+import { Card } from 'react-bootstrap'
+
+import Alert from 'react-bootstrap/Alert';
+
+function Example() {
+  return (
+    <Alert dismissible variant="danger">
+      <Alert.Heading>Oh snap! You got an error!</Alert.Heading>
+      <p>
+        Change this and that and try again.
+      </p>
+    </Alert>
+  )
+}
 
 class humanName extends Component {
   constructor(props) {
@@ -38,14 +52,31 @@ class humanName extends Component {
       const isReact = props.bool
       return isReact ? <p>Hello React</p> : <p>Vanilla</p>
     }
+    // map
+    function Maps() {
+      const books = [
+        { id: 1, title: 'React' },
+        { id: 2, title: 'Vue' },
+        { id: 3, title: 'Anglar' },
+      ]
+      return (
+        <ul>
+          {books.map((book) => (
+            <li key={book.id}>{book.title}</li>
+          ))}
+        </ul>
+      )
+    }
     // 返り値
     return (
-      <div onClick={this.handleClick}>
-        {/*  */}
-        <p>
-          {msg}
-          {this.state.name}は{this.props.age}歳{' '}
-        </p>
+      <div>
+        <div onClick={this.handleClick}>
+          {/*  */}
+          <p>
+            {msg}
+            {this.state.name}は{this.props.age}歳{' '}
+          </p>
+        </div>
         {/*  */}
         <p>
           靴下代金と目薬代金の合計は ={' '}
@@ -65,8 +96,34 @@ class humanName extends Component {
         </div>
         {/*  */}
         <div>
-          <ReactSelect bool={true}/>
+          <ReactSelect bool={true} />
         </div>
+        {/*  */}
+        <Maps />
+
+        <div class="card">
+          <div class="card-header">Featured</div>
+          <div class="card-body">
+            <h5 class="card-title">
+              Special title treatment
+            </h5>
+            <p class="card-text">
+              With supporting text below as a natural
+              lead-in to additional content.
+            </p>
+            <a href="#" class="btn btn-primary">
+              Go somewhere
+            </a>
+          </div>
+        </div>
+
+        <Card>
+          <Card.Body>
+            This is some text within a card body.
+          </Card.Body>
+        </Card>
+
+        <Example/>
       </div>
     )
   }

@@ -23,7 +23,7 @@ export default function App() {
   }
 
   return (
-    <div className="App fz20">
+    <div className="App">
       <h1 className="tx-ml"> Hello CodeSandbox</h1>
       <Hello name="Block" />
       {/* <Hello2 firstName="山田" lastName="たかし" /> */}
