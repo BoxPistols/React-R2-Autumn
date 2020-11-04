@@ -3,6 +3,7 @@ import './styles.sass'
 // import Basic from './Basic'
 // import Human from './Human'
 import DropDownMenu from './components/DropDownMenu'
+import Article from './components/Article'
 
 export default function App() {
   // function Hello(props) {
@@ -29,9 +30,10 @@ export default function App() {
       {/* <Hello name="Block" /> */}
       {/* <Hello2 firstName="山田" lastName="たかし" /> */}
       {/* <Hello3 /> */}
-      {/* <Basic /> */}
       {/* <Human age={24} /> */}
+      {/* <Basic /> */}
       <DropDownMenu />
+      <Article title="Hi"/>
     </div>
   )
 }
