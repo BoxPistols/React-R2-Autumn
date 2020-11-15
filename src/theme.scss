@@ -2,8 +2,10 @@
 /* テーマカラーを変更する */
 $theme-colors: (
   primary: teal,
+  ca: tomato,
   main: #222 /* デフォルトにないカラーの追加 */
 );
+
 /* ブレークポイントを変更する */
 $grid-breakpoints: (
   lg: 1024px,
