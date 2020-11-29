@@ -3,6 +3,7 @@ import './styles.sass'
 import Basic from './Basic'
 import Article from './components/Article'
 import HookBasic from './hooks/basic'
+import Timer from './hooks/timer'
 
 export default function App() {
 
@@ -13,6 +14,7 @@ export default function App() {
       <Basic/>
       <Article title="Hi"/>
       <HookBasic/>
+      <Timer/>
     </div>
   )
 }

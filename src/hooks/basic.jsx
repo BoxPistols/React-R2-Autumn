@@ -5,7 +5,7 @@
  * useCallback
  * useContext
  * useRef
-*/
+ */
 import React, { useState, useEffect } from 'react'
 
 function HookBasic() {
@@ -21,7 +21,9 @@ function HookBasic() {
    * countが更新されるたびに再描画出来る
    */
   useEffect(() => {
-    document.getElementById('effectHook').innerText = `You Clicked ${count} times`
+    document.getElementById(
+      'effectHook'
+    ).innerText = `You Clicked ${count} times`
   }, [count])
 
   return (
@@ -29,7 +31,12 @@ function HookBasic() {
       <p>Count: {count}</p>
       <p id="effectHook"></p>
       {/* setCoyuntに引数を渡して実行 */}
-      <button onClick={() => setCount(preCount => preCount + 1)}> Click!</button>
+      <button
+        onClick={() => setCount((preCount) => preCount + 1)}
+      >
+        {' '}
+        Click!
+      </button>
     </div>
   )
 }
