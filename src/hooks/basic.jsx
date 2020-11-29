@@ -7,6 +7,7 @@
  * useRef
  */
 import React, { useState, useEffect } from 'react'
+import Multi from './multi'
 
 function HookBasic() {
   /*
@@ -15,7 +16,7 @@ function HookBasic() {
    * useState() 初期値
    */
   const [count, setCount] = useState(12)
-
+  const reset = () => setCount(0)
   /*
    * 副作用を発生させる、描画後に実行される
    * countが更新されるたびに再描画出来る
@@ -28,15 +29,19 @@ function HookBasic() {
 
   return (
     <div>
-      <p>Count: {count}</p>
+      {/* <p>Count: {count}</p> */}
       <p id="effectHook"></p>
-      {/* setCoyuntに引数を渡して実行 */}
+      {/* setCountに引数を渡して実行 */}
       <button
         onClick={() => setCount((preCount) => preCount + 1)}
       >
         {' '}
         Click!
       </button>
+      <button onClick={reset}>Reset</button>
+      <div className="section">
+        <Multi />
+      </div>
     </div>
   )
 }
