@@ -17,6 +17,7 @@ const Article = (props) => {
   const data = {
     name: 'John',
     creative: 'song',
+    hobby: 'Game'
   }
   return (
     <div>
