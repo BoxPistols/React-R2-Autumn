@@ -1,56 +1,44 @@
-{
-    import React from 'react'
-    //props 省略
-    export default function Basic() {
-        const El = ({name}) => {
-            return (
-                <h1 style={{
-                        fontWeight: 800
-                    }}>
-                    {name}
-                </h1>
-            )
-        }
+import React from 'react'
+//props 省略
+export default function Basic() {
+    const books = [
+        {
+            id: 1,
+            title: 'React Book',
+        },
+        {
+            id: 2,
+            title: 'Vue Book',
+        },
+        {
+            id: 3,
+            title: 'Rails Book',
+        },
+    ]
 
-        function handleClick(event, msg) {
-            event.preventDefault()
-            console.log('The link was clicked.')
-        }
+    // mapの実行結果を返す関数
+    const bookItems = (library) =>
+        books.map((book) => (
+            <li kay={book.id}>
+                {book.title}：{library}
+            </li>
+        ))
 
-        const books = [
-            {
-                id: 1,
-                title: 'React Book'
-            }, {
-                id: 2,
-                title: 'Vue Book'
-            }, {
-                id: 3,
-                title: 'Rails Book'
-            }
-
-        ]
-        return (
-            <div>
-                <div className='section'>
-                    <El name='たかし'/>
-                    <button onClick="onClick" {
-(event) => handleClick(event, 'react')
-}>クリック！！</button>
-                </div>
+    return (
+        <div>
+            <div className='alert alert-primary' role='alert'>
+                <div className='section'></div>
                 <div className='section'>
                     <ul>
-                        {
-                            books.map((bk) => (<li kay={bk.id
-}>{bk.title}</li>))
-                        }
+                        {books.map((bk) => (
+                            <li kay={bk.id}>{bk.title}</li>
+                        ))}
                     </ul>
-                    0
                 </div>
-                <div className='alert alert-primary' role='alert'>
-                    A simple primary alert—check it out!
+                <div className='section'>
+                    <ul>{bookItems('＊改訂版')}</ul>
                 </div>
             </div>
-        )
-    }
+        </div>
+    )
 }
