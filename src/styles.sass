@@ -1,41 +1,37 @@
-@import "./theme"
-@import "~bootstrap/scss/bootstrap"
+@import './theme'
+@import '~bootstrap/scss/bootstrap'
 
-// html
-  // font-size: 62.5%
 body
-  font-size: 1.6rem
+    font-size: 1.6rem
 
-// table
-  // border-collapse: collapse
-  // border-spacing: 0
-//
 .App
-  //font-size: 1.6rem
-  font-family: sans-serif
-  text-align: center
-  padding: 24px
-  line-height: 1.75
+    text-align: center
+    font-family: sans-serif
+    line-height: 1.75
 
-button, input
-  border: 2px solid #999999
-  background: none
-  border-radius: 16px
-  padding: 4px 12px 0px
-  line-height: 1.5
-  display: inline-flex
-  align-items: center
-  justify-content: center
-  min-width: 120px
-  &:focus, &:active
-    outline: none
-    border-color: pink
-  &:active
-    outline: none
-    border-color: tomato
-
+    padding: 24px
+button,
 input
-  border-radius: 4px
+    line-height: 1.5
 
-.section
-  margin-top: 20px
+    border-radius: 16px
+    display: inline-flex
+    min-width: 120px
+    padding: 4px 12px 0
+    justify-content: center
+    border: 2px solid #999
+    background: none
+
+    align-items: center
+    &:focus,
+    &:active
+        border-color: pink
+        outline: none
+    &:active
+        border-color: tomato
+        outline: none
+    input
+        border-radius: 4px
+        .section
+            margin-top: 20px
+            padding: 24px

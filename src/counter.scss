@@ -1,24 +1,33 @@
-.container ul {
-  width: clamp(120px, 90%, 400px);
-  margin: 20px auto;
+.container ul
+{
+    width: clamp(120px, 90%, 400px);
+    margin: 20px auto;
 }
 
-.container ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.container ul
+{
+    display: flex;
+
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container li{
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-  cursor: pointer;
-  user-select: none;
-  border-radius: 5px;
-  margin: 0 5px 10px;
+.container li
+{
+    line-height: 100px;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 5px 10px;
+
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+
+    border-radius: 5px;
 }
