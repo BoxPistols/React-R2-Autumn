@@ -16,16 +16,20 @@ export default class Map extends Component {
                 name: 'melon',
             },
         ]
+
+        const fruitsItems = (p: string, v: number) =>
+            fruits.map((f) => (
+                <li key={f.id}>
+                    {p}
+                    {v}
+                    off! 対象商品： {f.id}: {f.name}
+                </li>
+            ))
+
         return (
             <Fragment>
                 <div className='alert alert-warning' role='alert'>
-                    <ul>
-                        {fruits.map((x) => (
-                            <li key={x.id}>
-                                {x.id}: {x.name}
-                            </li>
-                        ))}
-                    </ul>
+                    <ul>{fruitsItems('特価!', 30)}</ul>
                 </div>
             </Fragment>
         )
