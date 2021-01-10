@@ -2,6 +2,7 @@
 /* テーマカラーを変更する */
 $theme-colors: (
     primary: #3267ad,
+    success: rgb(64, 151, 125),
     ca: tomato,
     main: #222
     /* デフォルトにないカラーの追加 */
@@ -17,7 +18,7 @@ $grid-breakpoints: (
 @import "~bootstrap/scss/bootstrap";
 
 /* font-familyを上書き */
-$font-family-sans-serif:  Hiragino Kaku Gothic ProN, Meiryo,メイリオ, Arial, sans-serif;
+$font-family-sans-serif: Hiragino Kaku Gothic ProN, Meiryo,メイリオ, Arial, sans-serif;
 
 /*
  * react-bootstrap用カスタムクラス
@@ -27,14 +28,28 @@ $font-family-sans-serif:  Hiragino Kaku Gothic ProN, Meiryo,メイリオ, Arial,
  * （参考設定） .btn-flat ->  <Button variant='flat'>xxx</Button> としてReactコンポーネントとして使える
  */
 
+.btn {
+    border-width: 2px;
+    border-radius: 2.4em;
+    padding: .25em 2em;
+}
 .btn-flat {
     background-color: purple;
     color: white;
- }
-.btn-flats{
-    border-color: purple;
-    color: purple;
- }
+}
+
+$flat: purple;
+.btn-flat-o {
+    border-color: $flat;
+    color: $flat;
+    &:hover {
+        background-color: $flat;
+        color: white;
+    }
+}
+.btn-r-flat {
+    border-radius: 4px;
+}
 
 .card {
     background: #fff;

@@ -12,13 +12,10 @@ export default function UseEffectLesson() {
         document.querySelector(
             '.effectHook'
         ).innerText = `You clicked ${count} times`
-    }, [])
+    }, []) // 第二引数の設置
 
     return (
         <div>
-            <style type='text/css'>{`   `}</style>
-            <Button variant='flats'>Primary</Button>
-
             <div className='section'>
                 <p className='effectHook'></p>
             </div>
@@ -26,12 +23,12 @@ export default function UseEffectLesson() {
                 You clicked {count}
                 times
             </p>
-            <button
-                className='btn btn-outline-primary'
+            <Button
+                variant='flat-o btn-r-flat '
                 onClick={() => setCount((prevCount) => prevCount + 1)}
             >
                 Count Up
-            </button>
+            </Button>
         </div>
     )
 }
