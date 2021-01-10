@@ -29,7 +29,6 @@ export default function Basic() {
     return (
         <div>
             <div className='alert alert-primary' role='alert'>
-                <div className='section'></div>
                 <div className='section'>
                     <Map />
                 </div>
