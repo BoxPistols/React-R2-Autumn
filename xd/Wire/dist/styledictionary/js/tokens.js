@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Sun, 10 Jan 2021 18:12:56 GMT
+ * Generated on Sun, 10 Jan 2021 18:43:12 GMT
  */
 
 export const 707070 = "#707070";

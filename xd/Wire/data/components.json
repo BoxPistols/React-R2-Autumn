@@ -16,7 +16,8 @@
         "trigger": "card",
         "languages": {
           "scss": ".card{\n\tbackground: #fff;\n\tcolor: gray;\n}",
-          "javascriptreact": "<Card>Card</Card>"
+          "javascriptreact": "<Card>Card</Card>",
+          "html": "<div class=\"card normal\">\n  <img src=\"image/path\"/>\n  <div class=\"disc\">\n    <h3>title</h3>\n    <p>text content lorem ipsum</p>\n  </div>\n</div>"
         }
       },
       "name": "Card",
@@ -26,7 +27,7 @@
         "last_sync": "2021-01-10T17:57:03.374Z",
         "sync": true
       },
-      "last_updated": "2021-01-10T18:12:34.171Z",
+      "last_updated": "2021-01-10T18:43:07.935Z",
       "last_updated_by": "",
       "description": "# Card\n\n## アイテムUI"
     }
