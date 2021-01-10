@@ -1,5 +1,6 @@
 import React from 'react'
-import './styles.sass'
+import './css/styles.sass'
+
 import Basic from './Basic'
 // import Article from './components/Article'
 import HookBasic from './hooks/basic'
