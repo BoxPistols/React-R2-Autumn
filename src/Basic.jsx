@@ -1,4 +1,6 @@
 import React from 'react'
+import Map from './Map'
+
 //props 省略
 export default function Basic() {
     const books = [
@@ -28,6 +30,9 @@ export default function Basic() {
         <div>
             <div className='alert alert-primary' role='alert'>
                 <div className='section'></div>
+                <div className='section'>
+                    <Map />
+                </div>
                 <div className='section'>
                     <ul>
                         {books.map((bk) => (
