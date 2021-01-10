@@ -1,0 +1,14 @@
+{
+  "color": {
+    "#707070": {
+      "value": "#707070ff"
+    },
+    "#1BBAD3": {
+      "value": "#1BBAD3ff",
+      "comment": "メインカラー"
+    },
+    "#FFFFFF": {
+      "value": "#FFFFFFff"
+    }
+  }
+}
