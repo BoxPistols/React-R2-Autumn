@@ -1,0 +1,30 @@
+{
+  "font": {
+    "BIZ UDPゴシック — 20 pt": {
+      "family": {
+        "value": "BIZ UDPGothic"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    },
+    "メイリオ — 20 pt": {
+      "family": {
+        "value": "Meiryo"
+      },
+      "weight": {
+        "value": "Regular"
+      }
+    }
+  },
+  "size": {
+    "font": {
+      "BIZ UDPゴシック — 20 pt": {
+        "value": "20"
+      },
+      "メイリオ — 20 pt": {
+        "value": "20"
+      }
+    }
+  }
+}

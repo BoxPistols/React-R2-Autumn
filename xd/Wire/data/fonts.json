@@ -1,0 +1,78 @@
+{
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2021-01-10T17:28:51.135Z",
+  "entities": [
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "fee04e2d-c502-49bd-b956-aa76abf77e3b",
+      "name": "BIZ UDPゴシック — 20 pt",
+      "last_updated": "2021-01-10T18:03:01.902Z",
+      "last_updated_by": "",
+      "description": "Windows用基本フォント",
+      "tags": [
+        "windows"
+      ],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/9f4a0cf0-05cf-48ed-413c-5a25218dc54d",
+        "id": "a18ccf64-4a89-4ab3-93b4-41de4a0362c8",
+        "last_sync": "2021-01-10T17:33:59.380Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "15a36e35-64f3-4f8d-8cea-1a916843b857",
+          "type": "custom",
+          "value": "BIZ UDPGothic",
+          "key": "family"
+        },
+        {
+          "id": "15a36e35-64f3-4f8d-8cea-1a916843b857",
+          "type": "custom",
+          "value": "Regular",
+          "key": "weight"
+        },
+        {
+          "id": "15a36e35-64f3-4f8d-8cea-1a916843b857",
+          "type": "size",
+          "value": "20",
+          "key": "size"
+        }
+      ]
+    },
+    {
+      "class": "collection",
+      "type": "font",
+      "id": "99b87903-ebca-4609-9c32-bf3228529b4d",
+      "name": "メイリオ — 20 pt",
+      "tags": [],
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/9f4a0cf0-05cf-48ed-413c-5a25218dc54d",
+        "id": "10f9853f-7d89-47bb-81eb-ee24468d093c",
+        "last_sync": "2021-01-10T17:33:59.380Z",
+        "sync": true
+      },
+      "tokens": [
+        {
+          "id": "a69bf117-a792-47c2-a4b7-ca92ace3d6f7",
+          "type": "custom",
+          "value": "Meiryo",
+          "key": "family"
+        },
+        {
+          "id": "a69bf117-a792-47c2-a4b7-ca92ace3d6f7",
+          "type": "custom",
+          "value": "Regular",
+          "key": "weight"
+        },
+        {
+          "id": "a69bf117-a792-47c2-a4b7-ca92ace3d6f7",
+          "type": "size",
+          "value": "20",
+          "key": "size"
+        }
+      ]
+    }
+  ]
+}
