@@ -1,5 +1,9 @@
 # React Re:Basic
 
+[GitHb](https://github.com/BoxPistols/React-R2-Autumn)
+
+[Vercel](https://vercel.com/boxpistols/csb-rkge9)
+
 ## Hook
 
 バリエーション：
@@ -27,6 +31,9 @@
   - API との 通信
   - 非同期 処理
   - console. log
+- 第一引数に副作用を渡せば、コンポーネントのマウント後に副作用が実行される。
+- 成果物 [useEffect.jsx](https://github.com/BoxPistols/React-R2-Autumn/blob/ft/useEffect/src/hooks/useEffect.jsx)
+
 
 ---
 
