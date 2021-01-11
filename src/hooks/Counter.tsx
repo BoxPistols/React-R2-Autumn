@@ -14,12 +14,18 @@ export default function Counter() {
             console.log(count)
         }
     }
+
+    const reset = () => {
+        setCount((pre) => 0)
+    }
+
     return (
         <div>
             <div className='section'>
                 <h2>Counter {count}</h2>
                 <Button onClick={inc}>カウント</Button>
                 <Button onClick={inc10}>カウント10</Button>
+                <Button onClick={reset}>リセット</Button>
             </div>
         </div>
     )
