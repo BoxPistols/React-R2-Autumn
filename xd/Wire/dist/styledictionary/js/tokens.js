@@ -1,6 +1,10 @@
 /**
  * Do not edit directly
+<<<<<<< HEAD
  * Generated on Sun, 10 Jan 2021 18:43:12 GMT
+=======
+ * Generated on Sun, 10 Jan 2021 18:12:56 GMT
+>>>>>>> d11aa3ca0114d67ee388c4388c78c3fa0c8b7fc1
  */
 
 export const 707070 = "#707070";
