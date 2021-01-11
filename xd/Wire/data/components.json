@@ -1,35 +1,35 @@
 {
-    "dsp_spec_version": "0.0.1",
-    "last_updated_by": "",
-    "last_updated": "2021-01-10T17:28:51.135Z",
-    "entities": [
-        {
-            "class": "component",
-            "type": "page",
-            "tags": [],
-            "id": "68dd5023-1457-45d8-8fc2-42d9d0760ee6",
-            "related_entity_ids": [
-                "fee04e2d-c502-49bd-b956-aa76abf77e3b",
-                "0de218b5-6639-4124-9458-c6e11c5ee10e"
-            ],
-            "snippets": {
-                "trigger": "card",
-                "languages": {
-                    "scss": ".card{\n\tbackground: #fff;\n\tcolor: gray;\n}",
-                    "javascriptreact": "<Card>Card</Card>",
-                    "html": "<div class=\"card normal\">\n  <img src=\"image/path\"/>\n  <div class=\"disc\">\n    <h3>title</h3>\n    <p>text content lorem ipsum</p>\n  </div>\n</div>"
-                }
-            },
-            "name": "Card",
-            "ext-com_adobe-cclib": {
-                "source": "https://shared-assets.adobe.com/link/9f4a0cf0-05cf-48ed-413c-5a25218dc54d",
-                "id": "876da72d-d8de-4a38-afab-68a2a96baa4e",
-                "last_sync": "2021-01-10T17:57:03.374Z",
-                "sync": true
-            },
-            "last_updated": "2021-01-10T18:43:07.935Z",
-            "last_updated_by": "",
-            "description": "# Card\n\n## アイテムUI"
+  "dsp_spec_version": "0.0.1",
+  "last_updated_by": "",
+  "last_updated": "2021-01-10T17:28:51.135Z",
+  "entities": [
+    {
+      "class": "component",
+      "type": "page",
+      "tags": [],
+      "id": "68dd5023-1457-45d8-8fc2-42d9d0760ee6",
+      "related_entity_ids": [
+        "fee04e2d-c502-49bd-b956-aa76abf77e3b",
+        "0de218b5-6639-4124-9458-c6e11c5ee10e"
+      ],
+      "snippets": {
+        "trigger": "card",
+        "languages": {
+          "scss": ".card{\n\tbackground: #fff;\n\tcolor: gray;\n}",
+          "javascriptreact": "<Card>Card</Card>",
+          "html": "<div class=\"card normal\">\n  <img src=\"image/path\"/>\n  <div class=\"disc\">\n    <h3>title</h3>\n    <p>text content lorem ipsum</p>\n  </div>\n</div>"
         }
-    ]
+      },
+      "name": "Card",
+      "ext-com_adobe-cclib": {
+        "source": "https://shared-assets.adobe.com/link/9f4a0cf0-05cf-48ed-413c-5a25218dc54d",
+        "id": "876da72d-d8de-4a38-afab-68a2a96baa4e",
+        "last_sync": "2021-01-10T17:57:03.374Z",
+        "sync": true
+      },
+      "last_updated": "2021-01-10T18:43:07.935Z",
+      "last_updated_by": "",
+      "description": "# Card\n\n## アイテムUI"
+    }
+  ]
 }
