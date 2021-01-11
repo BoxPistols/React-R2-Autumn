@@ -1,0 +1,57 @@
+/* 1.変数の内容を変更 */
+/* テーマカラーを変更する */
+$theme-colors: (
+    primary: #3267ad,
+    success: rgb(64, 151, 125),
+    ca: tomato,
+    main: #222
+    /* デフォルトにないカラーの追加 */
+);
+
+/* ブレークポイントを変更する */
+$grid-breakpoints: (
+    lg: 1024px,
+    xl: 1366px
+);
+/* #region */
+
+@import "~bootstrap/scss/bootstrap";
+
+/* font-familyを上書き */
+$font-family-sans-serif: Hiragino Kaku Gothic ProN, Meiryo,メイリオ, Arial, sans-serif;
+
+/*
+ * react-bootstrap用カスタムクラス
+ * Bootstrap本体が保持しているクラス、接頭辞を利用して拡張パターンとする
+ * btn-xxx はBootstrapが持っているクラス
+ * .xxx-custom 右側がカスタムクラス
+ * （参考設定） .btn-flat ->  <Button variant='flat'>xxx</Button> としてReactコンポーネントとして使える
+ */
+
+.btn {
+    border-width: 2px;
+    border-radius: 2.4em;
+    padding: .25em 2em;
+}
+.btn-flat {
+    background-color: purple;
+    color: white;
+}
+
+$flat: purple;
+.btn-flat-o {
+    border-color: $flat;
+    color: $flat;
+    &:hover {
+        background-color: $flat;
+        color: white;
+    }
+}
+.btn-r-flat {
+    border-radius: 4px;
+}
+
+.card {
+    background: #fff;
+    color: gray;
+}

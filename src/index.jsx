@@ -2,8 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // eslint-disable-next-line
 import App from './App'
-import './reset.scss'
-import './theme.scss'
+// import 'bootstrap/dist/css/bootstrap.min.css'
+// import './reset.scss'
+// import './theme.scss'
 
 // render element to #root
 const rootElement = document.getElementById('root')
