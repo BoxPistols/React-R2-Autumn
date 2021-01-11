@@ -4,7 +4,7 @@ import './css/styles.sass'
 import Basic from './Basic'
 // import Article from './components/Article'
 import HookBasic from './hooks/basic'
-import Timer from './hooks/timer'
+// import Timer from './hooks/timer'
 import CounterTwo from './hooks/useStsateLesson'
 import UseEffectLesson from './hooks/useEffect'
 
@@ -23,12 +23,8 @@ export default function App() {
                 <Basic />
             </div>
             {/* <Article title="Hi" /> */}
-            <div className='section'>
-                <Timer />
-            </div>
-            <div className='section'>
-                <HookBasic />
-            </div>
+            <div className='section'>{/* <Timer /> */}</div>
+            <div className='section'>{/* <HookBasic /> */}</div>
         </div>
     )
 }

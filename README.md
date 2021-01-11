@@ -35,6 +35,7 @@
   - console. log
 - 第一引数に副作用を渡せば、コンポーネントのマウント後に副作用が実行される。
 - 成果物 [useEffect.jsx](https://github.com/BoxPistols/React-R2-Autumn/blob/ft/useEffect/src/hooks/useEffect.jsx)
+- 副作用対策に、第二引数の設置 ＝ １回だけ読まれる
 
 ---
 
