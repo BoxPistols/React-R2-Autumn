@@ -24,21 +24,21 @@ export default function UseEffectLesson() {
 
     return (
         <div>
-            <div className='section'>
+            {/* <div className='section'>
                 <p className='effectHook'></p>
-            </div>
+            </div> */}
 
             <div className='section counters'>
                 {/* <p>
                     count You clicked {count + count2}
                     times
                 </p> */}
-                <Button
+                {/* <Button
                     variant='flat-o btn-r-flat '
                     onClick={() => setCount((prevCount) => prevCount + 1)}
                 >
                     Count Up
-                </Button>
+                </Button> */}
             </div>
 
             <div className='section counters'>
