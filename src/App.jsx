@@ -1,13 +1,13 @@
 import React from 'react'
 import './css/styles.sass'
-import CompA from './components/CompA'
+import MemoBasic from './hooks/memo'
 
 export default function App() {
 	return (
 		<div className='App'>
 			<h1 className='tx-ml'>Hello CodeSandbox</h1>
-			<div className='section'>
-				<CompA />
+            <div className='section'>
+                <MemoBasic/>
 			</div>
 		</div>
 	)
