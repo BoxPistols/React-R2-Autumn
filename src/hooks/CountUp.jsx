@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { CountUpChild } from './CountUpChild';
 
-export default function CountUp() {
+export const CountUp = () => {
 
 	const [count, setCount] = useState(0)
 	const [text, setText] = useState('')
@@ -13,9 +13,17 @@ export default function CountUp() {
 
 	const onText = (e) => setText(e.target.value)
 
-	const onToggle = () => {
-		setOpen(!open)
-	}
+	// const onToggle = () => {
+	// 	setOpen(!open)
+	// }
+
+	const onOpen = useCallback(() => {
+		setOpen(true)
+	}, [])
+
+	const onClose = useCallback(() => {
+		setOpen(false)
+	}, [])
 
 	return (
 		<div>
@@ -31,8 +39,11 @@ export default function CountUp() {
 			<button onClick={onCounter}>onCounter</button>
 
 			<hr />
-			<CountUpChild open={open} />
-			<button onClick={onToggle}> onToggle </button>
+			<CountUpChild open={open} onClose={onClose} />
+			{/*<button onClick={onToggle}> onToggle </button>*/}
+
+			<button onClick={onOpen}> onOpen </button>
+			{/*	<button onClick={onClose}> onClose </button> */}
 
 		</div>
 	);

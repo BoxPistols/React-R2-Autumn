@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/styles.sass';
-import CountUp from './hooks/CountUp';
+import { CountUp } from './hooks/CountUp';
 
 export default function App() {
     return (
