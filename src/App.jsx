@@ -1,5 +1,6 @@
 import React from 'react'
 import './css/styles.sass'
+import { CountUp } from './hooks/CountUp';
 
 import Basic from './Basic'
 // import Article from './components/Article'
@@ -15,6 +16,7 @@ export default function App() {
             <h1 className='tx-ml'>Hello CodeSandbox</h1>
             <div className='section'>
                 <ItemHook />
+                <CountUp />
             </div>
             <div className='section'>{/* <UseEffectLesson /> */}</div>
             <div className='section'>{/* <CounterTwo /> */}</div>
@@ -22,5 +24,5 @@ export default function App() {
             <div className='section'>{/* <Timer /> */}</div>
             <div className='section'>{/* <HookBasic /> */}</div>
         </div>
-    )
+    );
 }

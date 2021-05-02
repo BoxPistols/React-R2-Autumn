@@ -14,11 +14,11 @@ export default function UseEffectLesson() {
     // ).innerText = `You clicked ${count} times` })
 
     useEffect(() => {
-        // document.querySelector(
-        //     '.effectHook'
-        // ).innerText = `You clicked ${count} times`
+        // document.querySelector(     '.effectHook' ).innerText = `You clicked ${count}
+        // times`
         console.log(count)
         console.log(count2)
+        console.log(count3)
     }, [count, count2]) // 副作用対策に、第二引数の設置 ＝ １回だけ読まれる
     // 明示的に副作用依存の値を指定すす
 

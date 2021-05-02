@@ -2,11 +2,14 @@
 @import './theme'
 // @import '~bootstrap/scss/bootstrap'
 
+@mixin text-light
+    color: ghostwhite
+
 body
     font-size: 1.6rem
     background-color: #234
     color: ghostwhite
-
+    @include text-light
 .App
     text-align: center
     font-family: sans-serif
@@ -26,6 +29,7 @@ input
     background: none
 
     align-items: center
+
     &:focus,
     &:active
         border-color: pink
